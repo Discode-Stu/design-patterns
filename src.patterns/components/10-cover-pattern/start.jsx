@@ -1,9 +1,10 @@
-import { styled } from "styled-components";
-import { Layers } from "../1-layers-pattern/start";
-import { InlineBundle } from "../5-inline-bundle-pattern/start";
-import { Button } from "./components";
-import { spaceSchema } from "../common/spaces";
-import { Pad } from "../7-pad-pattern/start";
+import { styled } from "styled-components"
+import { Layers } from "../1-layers-pattern/start"
+// import { InlineBundle } from "../5-inline-bundle-pattern/start";
+import { Button } from "./components"
+import { spaceSchema } from "../common/spaces"
+import { Pad } from "../7-pad-pattern/start"
+import { InlineBundle } from "../5-inline-bundle/start"
 
 export const Cover = styled.div.attrs(({ children, top, bottom }) => {
   return {
@@ -14,7 +15,7 @@ export const Cover = styled.div.attrs(({ children, top, bottom }) => {
         {bottom && <div>{bottom}</div>}
       </>
     ),
-  };
+  }
 })`
   display: grid;
   gap: ${(props) => spaceSchema[props.gutter] ?? spaceSchema.l};
@@ -32,7 +33,7 @@ export const Cover = styled.div.attrs(({ children, top, bottom }) => {
   > [data-cover-child] {
     align-self: center;
   }
-`;
+`
 
 const Top = () => {
   return (
@@ -42,16 +43,16 @@ const Top = () => {
       <span>Blog</span>
       <span>Contact Us</span>
     </InlineBundle>
-  );
-};
+  )
+}
 
 const Bottom = () => {
   return (
     <InlineBundle gutter="xl" justify="center">
       <a href="/#">Terms and Rules</a>
     </InlineBundle>
-  );
-};
+  )
+}
 
 const HeroPage = () => {
   return (
@@ -65,7 +66,7 @@ const HeroPage = () => {
         </InlineBundle>
       </Layers>
     </Cover>
-  );
-};
+  )
+}
 
-export default HeroPage;
+export default HeroPage

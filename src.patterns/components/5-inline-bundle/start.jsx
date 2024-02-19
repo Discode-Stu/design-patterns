@@ -8,6 +8,8 @@ const justifySchema = {
   start: "flex-start",
   end: "flex-end",
   center: "center",
+  between: "space-between",
+  around: "space-around",
 }
 
 export const InlineBundle = styled.div`

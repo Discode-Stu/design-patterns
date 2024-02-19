@@ -1,4 +1,5 @@
 import SubscribeForm from "./components/1-layers-pattern/start"
+import HeroPage from "./components/10-cover-pattern/start"
 import MainPage from "./components/11-final-project/main"
 import Modal from "./components/12-modal-project/register-modal"
 import InfoForm from "./components/2-split-pattern/start"
@@ -12,6 +13,7 @@ import GiftCardList from "./components/7-pad-pattern/start"
 import Profile from "./components/8-center-pattern/start"
 
 import NewProductsList from "./components/9-media-wrapper-pattern/start"
+import FinalProject from "./components/my-project/final-project"
 
 function AppPatterns() {
   return (
@@ -23,7 +25,10 @@ function AppPatterns() {
       {/* <Menu /> */}
       {/* <GiftCardList /> */}
       {/* <Profile /> */}
-      <NewProductsList />
+      {/* <NewProductsList /> */}
+      {/* <HeroPage /> */}
+      {/* <Modal /> */}
+      <FinalProject />
     </>
   )
 }

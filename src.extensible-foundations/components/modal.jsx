@@ -38,7 +38,7 @@ const CloseImgContainer = styled.div`
 
 const ModalHeader = styled.h3`
   position: relative;
-  font-size: ${typescale.header3}
+  font-size: ${typescale.header3};
   margin-bottom: 8px;
 `
 
